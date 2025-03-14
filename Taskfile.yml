@@ -1,0 +1,25 @@
+version: '3'
+
+tasks:
+  install:
+    cmds:
+      - task: env
+      - poetry install --with dev
+  
+  cq:
+   cmds:
+      - poetry run ruff format .
+      - poetry run ruff check --fix --unsafe-fixes .
+      - poetry run mypy .
+
+  run:
+    cmds:
+      - poetry run latest-pypi-version
+
+  clean:
+    cmds:
+      - find . -name '*.pyc' -exec rm -rf {} +
+      - find . -name '__pycache__' -exec rm -rf {} +
+      - find . -name 'Thumbs.db' -exec rm -rf {} +
+      - find . -name '*~' -exec rm -rf {} +
+      - rm -rf .cache build dist *.egg-info htmlcov .tox/ docs/_build
