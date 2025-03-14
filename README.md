@@ -88,3 +88,8 @@ The project includes a Taskfile with useful commands:
 * `task run` - Run the CLI tool
 * `task cq` - Run code quality checks (formatting, linting, and type checking)
 * `task clean` - Clean up temporary files and build artifacts
+
+### 📝 TODOs
+* [ ] Add CI/CD pipeline
+* [ ] Add tests
+* [ ] Add support for specifying a specific index URL
