@@ -1,6 +1,6 @@
 [project]
 name = "latest-pypi-version"
-version = "0.1.0"
+version = "1.0.0"
 description = "CLI tool to check the latest version of a PyPI package"
 authors = [{ name = "Roman Zydyk", email = "roman.zydyk@quantlane.com" }]
 readme = "README.md"
