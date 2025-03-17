@@ -13,6 +13,10 @@ A simple CLI tool to check the latest version of any package on PyPI.
 - Display detailed package information with verbose mode
 - Fast and lightweight with minimal dependencies
 
+## 🛠️ Other options
+- `pip index versions <package_name>` - shows all versions of a package but is experimental
+- `poetry show <package_name> --latest` - shows the latest version of a package but requires poetry to be installed and run in a directory with a poetry pyproject.toml file
+
 ## 🚀 Installation
 
 ### Using pip
